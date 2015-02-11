@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+<script src="jsontotable.js"></script>
+
+
+</head>
+<body>
+<div id="demo"></div>
+
+<script type="text/javascript">
+  var datat=[{"ObjectID":1858,"Capacity":"163 SCFM\t\t","Capacity2":"150 SCFM","ConnectionSize":"1-1/2\" NPT","Depth":"40 in","Height":"79 in","Weight":"540 lb","Width":"37 in"},{"ObjectID":1869,"Capacity":"230 SCFM","Capacity2":"250 SCFM\t\t","ConnectionSize":"1-1/2\" NPT","Depth":"40 in","Height":"84 in","Weight":"650 lb","Width":"41 in"}];
+  
+  var jsonResultData = ConvertJsonToTable(datat, 'tblProductList', 'table table-condensed table-striped table-bordered',null,null,null,null);
+          $("#demo").html(jsonResultData);
+
+
+</script>
+
+</body>
+</html>
